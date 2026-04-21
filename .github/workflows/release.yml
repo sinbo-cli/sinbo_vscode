@@ -3,7 +3,7 @@ name: release-ext
 on:
   push:
     tags:
-      - "ext-v*"
+      - "v*"
 
 permissions:
   contents: write
