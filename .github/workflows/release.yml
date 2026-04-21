@@ -21,13 +21,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd sinbo_vscode
           npm install
           npm install -g @vscode/vsce
 
       - name: Package extension
         run: |
-          cd sinbo_vscode
           vsce package --no-dependencies
 
       - name: Create GitHub release
